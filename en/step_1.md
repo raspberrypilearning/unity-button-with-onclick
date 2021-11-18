@@ -1,59 +1,36 @@
-## Introduction
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+Add a 'UI' 'Button - TextMeshPro'. It often makes sense to add the button as a child object of the GameObject with the method that will respond to the button click.
+You can add a button to an existing Canvas otherwise Unity will create a Canvas.
 
-### What you will make
+**Tip:** Adding a Button also adds an EventSystem to your Scene if it didn't have one already. This will handle the button click events. 
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
+The button will have a 'TextMeshPro' child. Set the text to be displayed in the Inspector. 
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
+Create a **public** method on a script attached to the GameObject that will respond to the button click. This could be an NPC. You could add the method to an existing script or create a new script.
 
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
+```
+public class ButtonHandler : MonoBehaviour
+{
+    public GameObject button; // if you want to be able to hide the button
 
---- collapse ---
----
-title: What you will need
----
-### Hardware
+    public void ButtonClicked()
+    {
+        Debug.Log("Button clicked");
+        // Add code for other actions
+        
+        button.SetActive(false); // hide the button
+    }
+}
+```
 
-+ A computer or tablet capable of running Scratch 3
+Optionally add a button variable and drag the Button object to the 'Button' property of the script in the Inspector. This will allow you to use `SetActive` to make the button hide when it is clicked. 
 
-### Software
+Select the button and, in the Inspector, find 'OnClick()' - you may need to scroll down. Click on the '+' and then drag the GameObject with the method you want to call into the box below 'Runtime'. Click the 'No Function' drop-down and select your script and then the method you want to call when the button is clicked. 
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
+**Test:** Play your scene and make sure that the `ButtonClicked()` method gets called. It's a good idea to use `Debug.Log()` to print to the console. 
 
-### Downloads
+**Debug:** 
 
-+ Download the project [starter file](http://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
++ Check that your method is on a script that is attached to a GameObject and that the OnClick() event for the button is connected to that method. 
++ Check that you have an EventSystem GameObject in your Scene. If not, right-click in the Hierachy and add one. 
 
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
----
-
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
-
---- /collapse ---
-
---- collapse ---
----
-title: Additional information for educators
----
-
-You can download the completed project [here](http://rpf.io/p/en/projectName-get){:target="_blank"}.
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
-
---- /collapse ---
