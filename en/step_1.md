@@ -8,7 +8,10 @@ The button will have a 'TextMeshPro' child. Set the text to be displayed in the 
 
 Create a **public** method on a script attached to the GameObject that will respond to the button click. This could be an NPC. You could add the method to an existing script or create a new script.
 
-```
+--- code ---
+---
+language: cs
+---
 public class ButtonHandler : MonoBehaviour
 {
     public GameObject button; // if you want to be able to hide the button
@@ -21,7 +24,7 @@ public class ButtonHandler : MonoBehaviour
         button.SetActive(false); // hide the button
     }
 }
-```
+--- /code ---
 
 Optionally add a button variable and drag the Button object to the 'Button' property of the script in the Inspector. This will allow you to use `SetActive` to make the button hide when it is clicked. 
 
