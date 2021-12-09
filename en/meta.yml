@@ -1,6 +1,6 @@
 title: Add a button with an OnClick method
 hero_image: images/banner.png
-description: Add a button and attach an OnClick method that gets called when the button is clicked. 
+description: Add a button and attach an OnClick method that gets called when the button is clicked 
 version: 4
 listed: false
 copyedit: false
