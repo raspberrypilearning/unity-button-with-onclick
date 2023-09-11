@@ -1,0 +1,7 @@
+if you want to be able to hide the button
+
+Button clicked
+
+Add code for other actions
+
+hide the button
