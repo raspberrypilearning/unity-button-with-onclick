@@ -1,7 +1,7 @@
-if you want to be able to hide the button
+si tu veux pouvoir cacher le bouton
 
-Button clicked
+Bouton cliqué
 
-Add code for other actions
+Ajouter du code pour d'autres actions
 
-hide the button
+cacher le bouton
