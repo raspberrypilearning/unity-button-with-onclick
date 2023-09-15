@@ -1,0 +1,7 @@
+si tu veux pouvoir cacher le bouton
+
+Bouton cliqué
+
+Ajouter du code pour d'autres actions
+
+cacher le bouton

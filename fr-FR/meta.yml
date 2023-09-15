@@ -1,0 +1,11 @@
+---
+title: Ajouter un bouton avec une méthode OnClick
+hero_image: images/banner.png
+description: Ajouter un bouton et attacher une méthode OnClick qui est appelée lorsque le bouton est cliqué
+version: 4
+listed: false
+copyedit: false
+last_tested: "2021-11-18"
+steps:
+  - title: Ajouter un bouton avec une méthode OnClick
+
