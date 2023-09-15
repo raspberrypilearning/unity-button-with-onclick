@@ -1,11 +1,11 @@
 
-Add a 'UI' 'Button - TextMeshPro'. It often makes sense to add the button as a child object of the GameObject with the method that will respond to the button click. You can add a button to an existing Canvas, otherwise Unity will create a Canvas.
+Ajouter un « UI » « Button - TextMeshPro ». Il est souvent judicieux d'ajouter le bouton en tant qu'objet enfant du GameObject avec la méthode qui répondra au clic sur le bouton. Tu peux ajouter un bouton à un Canvas existant, sinon Unity créera un Canvas.
 
-**Tip:** Adding a button also adds an EventSystem to your Scene if it didn't have one already. This will handle the button click events.
+**Astuce :** l'ajout d'un bouton permet également d'ajouter un EventSystem à ta scène si elle n'en avait pas déjà un. Il gère les événements liés au clic sur le bouton.
 
-The button will have a 'TextMeshPro' child. Set the text to be displayed in the Inspector.
+Le bouton aura un enfant « TextMeshPro ». Définis le texte à afficher dans l'Inspector.
 
-Create a **public** method on a script attached to the GameObject that will respond to the button click. This could be an NPC. You could add the method to an existing script or create a new script.
+Crée une méthode **publique** sur un script attaché au GameObject qui répondra au clic sur le bouton. Il peut s'agir d'un PNJ. Tu peux ajouter la méthode à un script existant ou créer un nouveau script.
 
 --- code ---
 ---
@@ -23,14 +23,14 @@ public class ButtonHandler : MonoBehaviour
     }
 } --- /code ---
 
-Optionally, add a button variable and drag the Button object to the Button property of the script in the Inspector. This will allow you to use `SetActive` to make the button hide when it is clicked.
+Si nécessaire, ajoute une variable bouton et faites glisser l'objet Button vers la propriété Button du script dans l'Inspector. Cela te permettra d'utiliser `SetActive` pour cacher le bouton lorsqu'il est cliqué.
 
-Select the button and, in the Inspector, find 'OnClick()' — you may need to scroll down. Click on the **+** and then drag the GameObject with the method you want to call into the box below 'Runtime'. Click the **No Function** drop-down menu and select your script and then the method you want to call when the button is clicked.
+Sélectionne le bouton et, dans l'Inspector, trouve « OnClick() », il se peut que tu aies besoin de faire défiler la page vers le bas. Clique sur le **+** puis fais glisser le GameObject avec la méthode que tu veux appeler dans la case située sous « Runtime ». Clique sur le menu déroulant **No Function** et sélectionne ton script puis la méthode que tu veux appeler lorsque le bouton est cliqué.
 
-**Test:** Play your scene and make sure that the `ButtonClicked()` method gets called. It's a good idea to use `Debug.Log()` to print to the Console.
+**Test :** joue ta scène et assure-toi que la méthode `BoutonClique()` est appelée. Il est conseillé d'utiliser `Debug.Log()` pour imprimer dans la console.
 
-**Debug:**
+**Déboguer :**
 
-+ Check that your method is on a script that is attached to a GameObject and that the OnClick() event for the button is connected to that method.
-+ Check that you have an EventSystem GameObject in your Scene. If not, right-click in the Hierachy window and add one. 
++ Vérifie que ta méthode se trouve sur un script attaché à un GameObject et que l'événement OnClick() du bouton est connecté à cette méthode.
++ Vérifie que tu as un GameObject EventSystem dans ta scène. Si ce n'est pas le cas, fais un clic droit dans la fenêtre Hierarchy et ajoutes-en une. 
 
