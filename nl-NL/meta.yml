@@ -1,11 +1,11 @@
-title: Add a button with an OnClick method
+title: Voeg een knop toe met een OnClick methode
 hero_image: images/banner.png
-description: Add a button and attach an OnClick method that gets called when the button is clicked
+description: Voeg een knop toe en voeg een OnClick methode toe die wordt aangeroepen wanneer op de knop wordt geklikt
 version: 4
 listed: false
 copyedit: false
 last_tested: "2021-11-18"
 steps:
   - 
-    title: Add a button with an OnClick method
+    title: Voeg een knop toe met een OnClick methode
 
