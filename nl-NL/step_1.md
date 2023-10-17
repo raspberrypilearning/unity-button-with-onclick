@@ -1,11 +1,11 @@
 
-Add a 'UI' 'Button - TextMeshPro'. It often makes sense to add the button as a child object of the GameObject with the method that will respond to the button click. You can add a button to an existing Canvas, otherwise Unity will create a Canvas.
+Voeg een 'UI' 'Knop - TextMeshPro' toe. Het is vaak zinvol om de knop als onderliggend object van het GameObject toe te voegen met de methode die zal reageren als er op de knop wordt geklikt. Je kunt een knop toevoegen aan een bestaand Canvas, anders maakt Unity een canvas.
 
-**Tip:** Adding a button also adds an EventSystem to your Scene if it didn't have one already. This will handle the button click events.
+**Tip:** Door een knop toe te voegen, wordt ook een EventSystem aan je Scène toegevoegd als deze er nog niet was. Hiermee worden gebeurtenissen afgehandeld wanneer er op de knop wordt geklikt.
 
-The button will have a 'TextMeshPro' child. Set the text to be displayed in the Inspector.
+De knop heeft een 'TextMeshPro'-onderliggend object. Stel de tekst in die in de Inspector moet worden weergegeven.
 
-Create a **public** method on a script attached to the GameObject that will respond to the button click. This could be an NPC. You could add the method to an existing script or create a new script.
+Maak een **public** method op een script dat is gekoppeld aan het GameObject en dat reageert op de klik op de knop. Dit zou een NPC kunnen zijn. Je kunt de methode toevoegen aan een bestaand script of een nieuw script maken.
 
 --- code ---
 ---
@@ -23,14 +23,14 @@ public class ButtonHandler : MonoBehaviour
     }
 } --- /code ---
 
-Optionally, add a button variable and drag the Button object to the Button property of the script in the Inspector. This will allow you to use `SetActive` to make the button hide when it is clicked.
+Voeg optioneel een knopvariabele toe en sleep het Button-object naar de Button-eigenschap van het script in de Inspector. Dit maakt het mogelijk om `SetActive` te gebruiken om de knop te verbergen wanneer er op geklikt wordt.
 
-Select the button and, in the Inspector, find 'OnClick()' — you may need to scroll down. Click on the **+** and then drag the GameObject with the method you want to call into the box below 'Runtime'. Click the **No Function** drop-down menu and select your script and then the method you want to call when the button is clicked.
+Selecteer de knop en zoek in de Inspector 'OnClick()' - misschien moet je naar beneden scrollen. Klik op de **+** en sleep vervolgens het GameObject met de methode die je wilt aanroepen naar het vak onder 'Runtime'. Klik op het vervolgkeuzemenu **No Function** en selecteer je script en vervolgens de methode die je wil aanroepen wanneer op de knop wordt geklikt.
 
-**Test:** Play your scene and make sure that the `ButtonClicked()` method gets called. It's a good idea to use `Debug.Log()` to print to the Console.
+**Test:** Speel je scène en zorg ervoor dat de `ButtonClicked()` methode wordt aangeroepen. Het is een goed idee om `Debug.Log()` te gebruiken om de Console af te drukken.
 
-**Debug:**
+**Fouten oplossen:**
 
-+ Check that your method is on a script that is attached to a GameObject and that the OnClick() event for the button is connected to that method.
-+ Check that you have an EventSystem GameObject in your Scene. If not, right-click in the Hierachy window and add one. 
++ Controleer of je methode op een script zit dat is gekoppeld aan een GameObject en dat de OnClick() gebeurtenis voor de knop is verbonden met die methode.
++ Controleer of je een EventSystem GameObject in je Scène hebt. Zo niet, klik met de rechtermuisknop in het Hierarchy venster en voeg er een toe. 
 
