@@ -1,7 +1,7 @@
-if you want to be able to hide the button
+als je de knop wilt kunnen verbergen
 
-Button clicked
+Op de knop geklikt
 
-Add code for other actions
+Voeg code toe voor andere acties
 
-hide the button
+verberg de knop
