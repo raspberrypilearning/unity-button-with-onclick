@@ -1,7 +1,7 @@
 
-Voeg een 'UI' 'Knop - TextMeshPro' toe. Het is vaak zinvol om de knop als onderliggend object van het GameObject toe te voegen met de methode die zal reageren als er op de knop wordt geklikt. Je kunt een knop toevoegen aan een bestaand Canvas, anders maakt Unity een canvas.
+Voeg een 'UI' 'Button - TextMeshPro' toe. Het is vaak zinvol om de knop als onderliggend object van het GameObject toe te voegen met de methode die zal reageren als er op de knop wordt geklikt. Je kunt een knop toevoegen aan een bestaand Canvas, anders maakt Unity een canvas.
 
-**Tip:** Door een knop toe te voegen, wordt ook een EventSystem aan je Scène toegevoegd als deze er nog niet was. Hiermee worden gebeurtenissen afgehandeld wanneer er op de knop wordt geklikt.
+**Tip:** Door een knop toe te voegen, wordt ook een EventSystem aan je Scene toegevoegd als deze er nog niet was. Hiermee worden gebeurtenissen afgehandeld wanneer er op de knop wordt geklikt.
 
 De knop heeft een 'TextMeshPro'-onderliggend object. Stel de tekst in die in de Inspector moet worden weergegeven.
 
@@ -32,5 +32,5 @@ Selecteer de knop en zoek in de Inspector 'OnClick()' - misschien moet je naar b
 **Fouten oplossen:**
 
 + Controleer of je methode op een script zit dat is gekoppeld aan een GameObject en dat de OnClick() gebeurtenis voor de knop is verbonden met die methode.
-+ Controleer of je een EventSystem GameObject in je Scène hebt. Zo niet, klik met de rechtermuisknop in het Hierarchy venster en voeg er een toe. 
++ Controleer of je een EventSystem GameObject in je Scene hebt. Zo niet, klik met de rechtermuisknop in het Hierarchy venster en voeg er een toe. 
 
